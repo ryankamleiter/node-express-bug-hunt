@@ -26,7 +26,41 @@ Fixed `quote.router.js` line 28: switch `app` to `router`. _This is the solution
 
 ### Bug 1
 
-...
+added module.exports... to quote.router.js
+
+### Bug 2
+
+on server.js changed route of app.use(express.static('public')) to app.use(express.static('server/public'));
+
+### Bug 3
+
+getQuote() changed to getQuotes() in client.js
+
+### Bug 4
+
+changed quote list variable to be an empty arrray instead of an empty object
+
+### Bug 5
+
+changed get pathing in quote.router.js from /quotes to /
+
+### Bug 6
+
+changed quotesList.push to quoteList.push in quote.router.js POST
+
+### Bug 7
+
+on client.js removed i++ from for of loop
+
+### Bug 8
+
+line 7 client.js removed a curly brace in '/quote' pathing
+
+### Bug 9
+
+line 9 - 10 index.html defered and moved axios package to be above the scripts/client.js
+
+
 
 ## Extra Practice (Optional)
 
